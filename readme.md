@@ -19,19 +19,19 @@ files, and has some tricks up it's sleeve:
    identifier. When tracking an identifier it means IWYU will stop ignoring a
    symbol and ask you to input it's header. Supports wildcards. Example:
 
-       ? std::*
+        ? std::*
 
 2. Start a line with an exclamation mark (!) to ignore a particular type of
    identifier. Supports wildcards and has preference over '?'. Example:
 
-       ! std::experimental::*
+        ! std::experimental::*
 
 3. Write an identifier on the left and a header file on the right separated by
    an equals sign (=) to assign a header. Supports wildcards. Exact matches have
    preference over wildcards. Examples:
 
-       std::ios_base::* = <ios>
-       assert = <cassert>
+        std::ios_base::* = <ios>
+        assert = <cassert>
 
 To run IWYU simply execute `python iwyu.py <FILE>...` and it will display a
 minimal set of headers for each file. IWYU will not edit your source files.
