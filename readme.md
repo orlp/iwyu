@@ -1,6 +1,6 @@
 # IWYU
 
-IWYU is a small utility that _helps_ you include the right C++ headers.. It helps
+IWYU is a small utility that _helps_ you include the right C++ headers. It helps
 you detect superfluous headers as well as potentially missing headers.
 
 The tool is not particularly smart. The first issue is that IWYU doesn't
