@@ -3,6 +3,8 @@
 IWYU is a small utility that _helps_ you include the right C++ headers. It helps
 you detect superfluous headers as well as potentially missing headers.
 
+_IWYU requires PLY. Run `pip install --user ply` to install it_.
+
 The tool is not particularly smart. The first issue is that IWYU doesn't
 compile, parse or even preprocess the code. It merely relies on regular
 expressions to extract identifiers and their potential namespaces.
