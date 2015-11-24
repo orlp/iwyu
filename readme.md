@@ -6,8 +6,8 @@ you detect superfluous headers as well as potentially missing headers.
 _IWYU requires PLY. Run `pip install --user ply` to install it_.
 
 The tool is not particularly smart. The first issue is that IWYU doesn't
-compile, parse or even preprocess the code. It merely relies on regular
-expressions to extract identifiers and their potential namespaces.
+compile, parse or even preprocess the code. It merely relies on lexical
+analysis to extract identifiers and their potential namespaces.
 
 Secondly, it relies on manual input to learn where each symbol comes from. If
 the tool encounters a symbol in a namespace you're interested in that it hasn't
